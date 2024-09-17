@@ -4,13 +4,12 @@
  * TP0 Exercice 1
  * 17 septembre 2024 
  */
-package tp0_ex1;
 
 import java.util.Scanner;
 
 /**
- *
- * @author constancefabre
+ * TP0 exercice 1
+ * constancefabre
  */
 public class TP0_Ex1 {
 
