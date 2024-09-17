@@ -4,6 +4,7 @@
  * TP0 Exercice 1
  * 17 septembre 2024 
  */
+package class tp0_Ex1;
 
 import java.util.Scanner;
 
