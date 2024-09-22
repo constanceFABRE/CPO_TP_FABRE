@@ -6,6 +6,8 @@ Vendredi 20 septembre 2024
 
 package com.mycompany.exo3_tp0;
 
+import java.util.Scanner;
+
 /**
  *
  * @author constancefabre
@@ -13,17 +15,59 @@ package com.mycompany.exo3_tp0;
 public class EXO3_TP0 {
 
     public static void main(String[] args) {
-        System.out.println("please enter the operator :");
-        System.out.println("1) Add ");
-        System.out.println("2) substract ");
-        System.out.println("3) multiply ");
-        System.out.println("4) divide ");
-        System.out.println("5) modulo ");
-        int operator;
+        Scanner sc = new Scanner(System.in);
+        int operateur;
         int operande1;
         int operande2;
-        System.out.println("veuillez entrer un nombre ");
-        System.out.println("veuillez entrer un nombre ");
-        
+        int result;
+       
+        operateur = 0;
+        operande1 = 0;
+        operande2 = 0;
+        result = 0;
+       
+       
+        System.out.println("Please enter the operator:");
+        System.out.println("1) Add");
+        System.out.println("2) Substract");
+        System.out.println("3) Multiply");
+        System.out.println("4) Divide");
+        System.out.println("5) Modulo");
+       
+        operateur = sc.nextInt();
+        if (operateur<1 && operateur>5){
+            System.out.println("Please enter the operator:");
+        }
+       
+       
+        System.out.println("Please enter the first number:");
+        operande1 = sc.nextInt();
+        System.out.println("Please enter the second number:");
+        operande2 = sc.nextInt();
+       
+       
+        if (operateur==1){
+            result = operande1 + operande2;
+        }
+       
+        if (operateur==2){
+            result = operande1 - operande2;
+        }
+       
+        if (operateur==3){
+            result = operande1 * operande2;
+        }
+       
+        if (operateur==4){
+            result = operande1 / operande2;
+        }
+       
+        if (operateur==5){
+            result = operande1 % operande2;
+        }
+       
+       
+        System.out.println("The result is :"+ result);
     }
+   
 }
