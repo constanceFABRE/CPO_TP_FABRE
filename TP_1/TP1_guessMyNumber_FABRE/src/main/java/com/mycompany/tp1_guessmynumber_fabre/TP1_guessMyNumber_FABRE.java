@@ -17,28 +17,58 @@ public class TP1_guessMyNumber_FABRE {
     public static void main(String[] args) {
         Random generateurAleat = new Random();
         Scanner sc = new Scanner(System.in);
-        
-        for (int i = 1; i <= 5; i++ ) {
+       
+        for (int i = 1; i<=5; i++){
             int n = generateurAleat.nextInt(100);
-            System.out.println(n + " ");
+            System.out.print(n + " ");
         }
-    
-        int nb = generateurAleat.nextInt(100); 
-        System.out.println("Vous devez saisr une valeur entre 0 et 100");
+       
+        int nb = generateurAleat.nextInt(100);
+        System.out.println("Veuillez saisir un nombre entre 0 et 100 :");
         int nombre = sc.nextInt();
-        
-        while (nombre!= nb)
-            if (nb > nombre) {
+        int compteur = 0;
+       
+        while (nombre != nb) {
+            if (nb>nombre){
                 System.out.println("Trop petit");
-            }    
-        
-            else if (nb < nombre) {
-                System.out.println("Trop grand");
+                System.out.println("Veuillez saisir un nombre plus grand :");
+                nombre = sc.nextInt();
+                compteur += 1;
             }
-        
+           
             else {
-                System.out.println("Gagné");
+                System.out.println("Trop grand");
+                System.out.println("Veuillez saisir un nombre plus petit :");
+                nombre = sc.nextInt();
+                compteur += 1;
             }
+        }
+        System.out.println("Vous avez gagne");
+        System.out.println("Vous avez effectue " + (compteur+1) + " coups");
         
+        int niveau ;
+        System.out.println("1 = facile");
+        System.out.println("2 = normal");
+        System.out.println("3 = difficile");
+        System.out.println("veuillez saisir le numéro du niveau de difficulté que vous avez choisi");
+        
+        if ( niveau = 1 ){
+            
+           }
+        
+        else if ( niveau = 2 ){
+            
+           }
+        
+        else if ( niveau = 3 ){
+            
+           }
+        
+        else {
+            
+           }
+        
+        }
     }
+    
 }
